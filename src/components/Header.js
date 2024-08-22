@@ -17,7 +17,7 @@ const Header = () => {
     <AppBar position="fixed" color={isScrolled ? 'primary' : 'transparent'} elevation={isScrolled ? 4 : 0}>
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          <img src="/images/logo.svg" alt="Bump Wallet Logo" style={{ height: 40 }} />
+          <img src="/logoword.png" alt="Bump Wallet Logo" style={{ height: 40 }} />
         </Typography>
         <Box sx={{ display: { xs: 'none', md: 'block' } }}>
           <Button color="inherit" href="#features">Features</Button>

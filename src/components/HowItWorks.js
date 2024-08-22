@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box, Typography, Stepper, Step, StepLabel, StepContent, Button, Paper } from '@mui/material';
 import { motion } from 'framer-motion';
 import DownloadIcon from '@mui/icons-material/Download';
@@ -13,7 +13,7 @@ const steps = [
   },
   {
     label: 'Load Your Wallet',
-    description: 'Add Bitcoin to your wallet through purchases or transfers. Fast, secure, and hassle-free.',
+    description: 'Add Bitcoin to your wallet through our BumpBuy partners or simply import your wallet. Fast, secure, and hassle-free.',
     icon: <AccountBalanceWalletIcon />,
   },
   {

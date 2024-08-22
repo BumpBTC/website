@@ -1,8 +1,50 @@
-import React from 'react';
-import { Box, Typography, Button, Container } from '@mui/material';
+import React, { useState } from 'react';
+import { Box, Typography, Button, Container, TextField, Snackbar } from '@mui/material';
 import { motion } from 'framer-motion';
+import emailjs from 'emailjs-com';
 
 const CTA = () => {
+  const [email, setEmail] = useState('');
+  const [open, setOpen] = useState(false);
+  const [message, setMessage] = useState('');
+  const [error, setError] = useState('');
+
+  const validateEmail = (email) => {
+    const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return re.test(String(email).toLowerCase());
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!validateEmail(email)) {
+      setError('Please enter a valid email address');
+      return;
+    }
+    setError('');
+
+    try {
+      const templateParams = {
+        to_email: email,
+        message: 'Thank you for signing up for early access to Bump 2 Pay!'
+      };
+
+      await emailjs.send(
+        'service_itmoea9',  // Replace with your EmailJS service ID
+        'template_vxzn2xm', // Replace with your EmailJS template ID
+        templateParams,
+        'LjgOoqNPpg23JpnH0'      // Replace with your EmailJS user ID
+      );
+
+      setMessage('Thank you for signing up! Check your email for confirmation.');
+      setOpen(true);
+      setEmail('');
+    } catch (error) {
+      console.error('Error sending email:', error);
+      setMessage('An error occurred. Please try again later.');
+      setOpen(true);
+    }
+  };
+
   return (
     <Box
       sx={{
@@ -12,6 +54,7 @@ const CTA = () => {
         position: 'relative',
         overflow: 'hidden',
       }}
+      id="early-access"
     >
       <Container maxWidth="md">
         <motion.div
@@ -20,29 +63,60 @@ const CTA = () => {
           transition={{ duration: 0.8 }}
         >
           <Typography variant="h2" align="center" gutterBottom>
-            Ready to Revolutionize Your Payments?
+            Be Among the First to Try Bump 2 Pay
           </Typography>
           <Typography variant="h5" align="center" paragraph>
-            Join thousands of users already experiencing the future of finance with Bump Wallet.
+            Join thousands of users already experiencing the future of NFC payments with Bump Wallet.
           </Typography>
-          <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}>
-            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <Box component="form" onSubmit={handleSubmit} sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}>
+            <TextField
+              variant="outlined"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              error={!!error}
+              helperText={error}
+              sx={{ 
+                mr: 2, 
+                bgcolor: 'white',
+                '& .MuiOutlinedInput-root': {
+                  '& fieldset': {
+                    borderColor: 'white',
+                  },
+                  '&:hover fieldset': {
+                    borderColor: 'white',
+                  },
+                  '&.Mui-focused fieldset': {
+                    borderColor: 'white',
+                  },
+                },
+              }}
+            />
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button
+                type="submit"
                 variant="contained"
                 color="secondary"
                 size="large"
                 sx={{
-                  px: 6,
+                  px: 4,
                   py: 2,
                   fontSize: '1.2rem',
                   boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
                 }}
               >
-                Download Now
+                Get Early Access
               </Button>
             </motion.div>
           </Box>
         </motion.div>
+        <Snackbar
+          anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+          open={open}
+          autoHideDuration={6000}
+          onClose={() => setOpen(false)}
+          message={message}
+        />
       </Container>
       {/* Animated background elements */}
       {[...Array(20)].map((_, i) => (

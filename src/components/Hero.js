@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box, Typography, Button, Container } from '@mui/material';
 import { motion } from 'framer-motion';
 
@@ -40,6 +40,9 @@ const Hero = () => {
           </Typography>
           <Typography variant="h3" align="center" gutterBottom>
             Tap. Pay. Go. The Future of tap-to-pay is Here.
+          </Typography>
+          <Typography variant="h5" align="center" gutterBottom>
+            Instant Bitcoin transactions between peers and merchants
           </Typography>
           <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}>
             <Button variant="contained" color="secondary" size="large">
