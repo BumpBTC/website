@@ -3,7 +3,6 @@ import { Box, Container, Grid, Typography, Link, IconButton } from '@mui/materia
 import TwitterIcon from '@mui/icons-material/Twitter';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import DiscordIcon from '@mui/icons-material/Discord';
 
 const Footer = () => {
   return (
@@ -47,9 +46,6 @@ const Footer = () => {
               </IconButton>
               <IconButton color="inherit" aria-label="GitHub" component="a" href="https://github.com/BumpBTC" target="_blank" rel="noopener noreferrer">
                 <GitHubIcon />
-              </IconButton>
-              <IconButton color="inherit" aria-label="Discord" disabled>
-                <DiscordIcon />
               </IconButton>
             </Box>
           </Grid>
