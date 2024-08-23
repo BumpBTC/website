@@ -3,6 +3,7 @@ import { Box, Container, Grid, Typography, Link, IconButton } from '@mui/materia
 import TwitterIcon from '@mui/icons-material/Twitter';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import DiscordIcon from '@mui/icons-material/Discord';
 
 const Footer = () => {
   return (
@@ -23,7 +24,7 @@ const Footer = () => {
               Bump Bitcoin Wallet
             </Typography>
             <Typography variant="body2">
-              Revolutionizing mobile Bitcoin payments with tap-to-pay technology and lightning-fast transactions.
+              Mobile Bitcoin payments with tap-to-pay technology and lightning-fast transactions.
             </Typography>
           </Grid>
           <Grid item xs={6} sm={4}>
@@ -34,7 +35,6 @@ const Footer = () => {
               <Link href="#" color="inherit" display="block">Home</Link>
               <Link href="#features" color="inherit" display="block">Features</Link>
               <Link href="#how-it-works" color="inherit" display="block">How It Works</Link>
-              <Link href="#coming-soon" color="inherit" display="block">Coming Soon</Link>
             </Box>
           </Grid>
           <Grid item xs={6} sm={4}>
@@ -42,14 +42,14 @@ const Footer = () => {
               Connect With Us
             </Typography>
             <Box>
-              <IconButton color="inherit" aria-label="Twitter">
+              <IconButton color="inherit" aria-label="Twitter" component="a" href="https://x.com/bump2pay" target="_blank" rel="noopener noreferrer">
                 <TwitterIcon />
               </IconButton>
-              <IconButton color="inherit" aria-label="Telegram">
-                <TelegramIcon />
-              </IconButton>
-              <IconButton color="inherit" aria-label="GitHub">
+              <IconButton color="inherit" aria-label="GitHub" component="a" href="https://github.com/BumpBTC" target="_blank" rel="noopener noreferrer">
                 <GitHubIcon />
+              </IconButton>
+              <IconButton color="inherit" aria-label="Discord" disabled>
+                <DiscordIcon />
               </IconButton>
             </Box>
           </Grid>

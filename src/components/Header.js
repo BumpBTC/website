@@ -22,7 +22,6 @@ const Header = () => {
         <Box sx={{ display: { xs: 'none', md: 'block' } }}>
           <Button color="inherit" href="#features">Features</Button>
           <Button color="inherit" href="#how-it-works">How It Works</Button>
-          <Button color="inherit" href="#coming-soon">Coming Soon</Button>
         </Box>
         <Button variant="contained" color="secondary" sx={{ ml: 2 }}>
           Download
