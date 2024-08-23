@@ -36,13 +36,13 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <Typography variant="h1" align="center" gutterBottom>
-            Bump BTC Wallet
+            Wanna Bump?
           </Typography>
           <Typography variant="h3" align="center" gutterBottom>
-            Tap. Pay. Go. The Future of tap-to-pay is Here.
+            Tap. Pay. Go. 
           </Typography>
           <Typography variant="h5" align="center" gutterBottom>
-            Instant Bitcoin transactions between peers and merchants
+          Instant Bitcoin payments
           </Typography>
           <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}>
             <Button variant="contained" color="secondary" size="large">

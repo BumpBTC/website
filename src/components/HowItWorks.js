@@ -8,17 +8,17 @@ import TapAndPlayIcon from '@mui/icons-material/TapAndPlay';
 const steps = [
   {
     label: 'Download & Setup',
-    description: 'Install Bump Wallet and set up your account in minutes. No complex steps, just simple, user-friendly onboarding.',
+    description: 'Install the Bump Wallet mobile app and set up your account in minutes. Create a new Bitcoin, Litecoin, or Lightning wallet upon Signup in one-click.',
     icon: <DownloadIcon />,
   },
   {
     label: 'Load Your Wallet',
-    description: 'Add Bitcoin to your wallet through our BumpBuy partners or simply import your wallet. Fast, secure, and hassle-free.',
+    description: 'Add BTC to your wallet by purchasing from our approved partners or simply import your Bitcoin wallet with your private key.',
     icon: <AccountBalanceWalletIcon />,
   },
   {
-    label: 'Tap & Pay',
-    description: 'Use your phone to make payments anywhere that accepts Bitcoin. Quick, seamless, and revolutionary.',
+    label: 'Bump & Pay',
+    description: 'Use your phone to make payments anywhere that accepts Bitcoin, the gold standard in decentralized currency.',
     icon: <TapAndPlayIcon />,
   },
 ];
@@ -48,7 +48,7 @@ const HowItWorks = () => {
               <StepContent>
                 <Typography>{step.description}</Typography>
                 {index === steps.length - 1 && (
-                  <Box sx={{ mb: 2 }}>
+                  <Box sx={{ pt: 2, mb: 2  }}>
                     <Button
                       variant="contained"
                       color="secondary"

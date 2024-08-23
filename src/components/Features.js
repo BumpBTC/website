@@ -30,7 +30,7 @@ const Features = () => {
   return (
     <Box sx={{ py: 8, bgcolor: 'background.default' }}>
       <Typography variant="h2" align="center" gutterBottom>
-      Revolutionary NFC Payment Features
+      The Future of BTC Payments is Here
       </Typography>
       <Grid container spacing={4} sx={{ mt: 4 }}>
         <Grid item xs={12} md={4}>
@@ -64,7 +64,7 @@ const Features = () => {
         <Grid item xs={12} md={4}>
           <FeatureCard
             title="Multiple Currencies"
-            description="Use Bitcoin now, with USDC stablecoin support coming soon."
+            description="Pay with Bitcoin and Litecoin now, with USDC stablecoin support coming soon."
             icon={<StarsIcon sx={{ fontSize: 60, color: 'secondary.main' }} />}
           />
         </Grid>

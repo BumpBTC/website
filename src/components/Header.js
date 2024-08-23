@@ -25,7 +25,7 @@ const Header = () => {
           <Button color="inherit" href="#coming-soon">Coming Soon</Button>
         </Box>
         <Button variant="contained" color="secondary" sx={{ ml: 2 }}>
-          Launch App
+          Download
         </Button>
         <IconButton
           size="large"

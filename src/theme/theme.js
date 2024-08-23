@@ -8,9 +8,9 @@ const theme = createTheme({
       dark: '#051A4E',
     },
     secondary: {
-      main: '#F7931A', // Bitcoin orange
+      main: '#ff6320', // Bitcoin orange
       light: '#F9A94A',
-      dark: '#D57D0A',
+      dark: '#ff7633',
     },
     background: {
       default: '#0A1929',

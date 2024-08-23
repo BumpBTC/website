@@ -20,7 +20,7 @@ const Footer = () => {
         <Grid container spacing={4} justifyContent="space-between">
           <Grid item xs={12} sm={4}>
             <Typography variant="h6" color="text.primary" gutterBottom>
-              Bump BTC Wallet
+              Bump Bitcoin Wallet
             </Typography>
             <Typography variant="body2">
               Revolutionizing mobile Bitcoin payments with tap-to-pay technology and lightning-fast transactions.
