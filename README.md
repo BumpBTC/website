@@ -1,14 +1,14 @@
 # Bump BTC Wallet: Tap-to-Pay Bitcoin
 
-![Bump BTC Wallet Logo](placeholder_logo.png)
+![Bump BTC Wallet Logo](logoword.png)
 
 ## Wanna Bump?
 
-**Tap. Pay. Go.** Experience the future of instant Bitcoin payments.
+**Tap. Pay. Go.** The future of instant Bitcoin payments.
 
 ## The Future of BTC Payments is Here
 
-Bump BTC Wallet revolutionizes cryptocurrency transactions with its innovative tap-to-pay technology. We're not just another Bitcoin wallet – we're redefining how you use digital currency in everyday life.
+Bump BTC Wallet makes cryptocurrency transactions simple with it's innovative tap-to-pay technology. 
 
 ### Why Bump?
 
@@ -53,13 +53,13 @@ Bump BTC Wallet revolutionizes cryptocurrency transactions with its innovative t
 
 Ready to experience the future of Bitcoin payments? 
 
-[Get Early Access](https://bumpbtcwallet.com/early-access)
+[Get Early Access](https://bumpbtc.com)
 
 ## Stay Connected
 
-- [Website](https://bumpbtcwallet.com)
+- [Website](https://bumpbtc.com)
 - [Twitter](https://twitter.com/bump2pay)
-- [Discord Community](https://discord.gg/bumpbtcwallet) - Coming Soon!
+- [Discord Community](https://discord.gg/bumpbtc) - Coming Soon!
 
 ---
 
